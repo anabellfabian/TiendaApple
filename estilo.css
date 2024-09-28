@@ -1,132 +1,193 @@
-/* Reset básico */
-* {
+
+body {
+    font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: 'Helvetica Neue', sans-serif;
+    background-color: #111;
+    color: #fff; 
 }
 
-/* Fondo general negro */
-body {
-    background-color: #000;
-    color: #fff;
-    padding: 20px;
-    font-family: Arial, sans-serif;
-}
 
-/* Header elegante */
 header {
+    background-color: #000;
+    padding: 20px;
     text-align: center;
-    margin-bottom: 40px;
-    padding-bottom: 10px;
-    border-bottom: 2px solid #444;
+    border-bottom: 1px solid #333;
 }
 
 header h1 {
-    font-size: 3em;
-    letter-spacing: 5px;
-    color: #fff;
+    font-size: 40px;
     font-weight: bold;
+    margin: 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 20px 0;
+
+header img {
+    width: 50px;
+    height: auto;
+    display: block;
+    margin: 0 auto 10px auto;
+}
+
+
+nav {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    background-color: #1a1a1a;
+    padding: 15px 0;
+    border-bottom: 1px solid #333;
 }
 
-nav ul li {
-    display: inline;
-}
-
-nav ul li a {
+nav a {
     text-decoration: none;
-    color: #ccc;
-    font-size: 1.1em;
-    padding: 10px 20px;
-    border: 2px solid transparent;
-    transition: all 0.3s;
-}
-
-nav ul li a:hover {
     color: #fff;
-    border-bottom: 2px solid #fff;
+    font-size: 18px;
+    margin: 0 20px;
+    padding: 5px 10px;
+    transition: color 0.3s, background-color 0.3s;
 }
 
-/* Sección de servicios */
-.servicios h2 {
+nav a:hover {
+    background-color: #333;
+    color: #00bcf2; 
+    border-radius: 5px;
+}
+
+
+.slide {
     text-align: center;
-    font-size: 2.5em;
-    color: #f0f0f0;
-    margin-bottom: 30px;
-    text-transform: uppercase;
-    letter-spacing: 4px;
+    padding: 100px 20px;
+    background-color: #000;
 }
 
-/* Catálogo */
-.contenedor-catalogo {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+.slide h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+.slide p {
+    font-size: 22px;
+    margin-bottom: 30px;
+}
+
+.boton-campra {
+    background-color: #00bcf2;
+    color: #fff;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.boton-campra:hover {
+    background-color: #007bbf;
+}
+
+
+.Destacados {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+.Destacados h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #fff;
+}
+
+.product-grid {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
     gap: 30px;
-    padding: 0 20px;
-    margin-bottom: 50px;
+}
+
+.producto {
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 10px;
+    width: 300px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.producto img {
+    max-width: 100%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.producto h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #00bcf2; 
+}
+
+.producto p {
+    font-size: 16px;
+    color: #bbb; 
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+
+.servicios {
+    text-align: center;
+    padding: 20px;
+    color: #fff; 
+}
+
+.contenedor-catalogo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding: 20px;
 }
 
 .item {
-    background-color: #222;
-    padding: 20px;
+    background-color: #1a1a1a;
     border-radius: 10px;
+    padding: 10px;
     text-align: center;
-    transition: transform 0.3s ease;
-    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s;
+    width: 200px;
 }
 
 .item img {
     max-width: 100%;
     border-radius: 10px;
-    margin-bottom: 20px;
-    height: auto;
 }
 
 .item h3 {
-    font-size: 1.5em;
-    color: #e0e0e0;
-    margin-bottom: 10px;
-    letter-spacing: 2px;
+    font-size: 20px;
+    margin: 10px 0;
+    color: #00bcf2; 
 }
 
-.item p.precio {
-    font-size: 1.2em;
-    color: #00ff88;
-    font-weight: bold;
+.item .precio {
+    font-size: 18px;
+    color: #fff; 
 }
+
 
 .item:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 20px rgba(255, 255, 255, 0.2);
+    transform: scale(1.05);
 }
 
-/* Enlaces interactivos */
-a {
-    text-decoration: none;
-    color: inherit;
+
+footer {
+    background-color: #000;
+    color: #888;
+    padding: 20px;
+    text-align: center;
+    border-top: 1px solid #333;
 }
 
-/* Responsivo */
-@media (max-width: 768px) {
-    nav ul {
-        flex-direction: column;
-        gap: 15px;
-    }
-
-    header h1 {
-        font-size: 2em;
-    }
-
-    .contenedor-catalogo {
-        padding: 0 10px;
-    }
+footer p {
+    margin: 0;
+    font-size: 14px;
 }
