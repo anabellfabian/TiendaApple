@@ -1,4 +1,4 @@
-
+/* Estilo general */
 body {
     font-family: 'Helvetica Neue', sans-serif;
     margin: 0;
@@ -6,7 +6,6 @@ body {
     background-color: #111;
     color: #fff; 
 }
-
 
 header {
     background-color: #000;
@@ -21,14 +20,12 @@ header h1 {
     margin: 0;
 }
 
-
 header img {
     width: 50px;
     height: auto;
     display: block;
     margin: 0 auto 10px auto;
 }
-
 
 nav {
     display: flex;
@@ -53,7 +50,7 @@ nav a:hover {
     border-radius: 5px;
 }
 
-
+/* Sección de la página principal e index */
 .slide {
     text-align: center;
     padding: 100px 20px;
@@ -84,7 +81,7 @@ nav a:hover {
     background-color: #007bbf;
 }
 
-
+/* Sección de productos */
 .Destacados {
     padding: 40px 20px;
     text-align: center;
@@ -133,7 +130,6 @@ nav a:hover {
     transform: scale(1.05);
 }
 
-
 .servicios {
     text-align: center;
     padding: 20px;
@@ -173,12 +169,11 @@ nav a:hover {
     color: #fff; 
 }
 
-
 .item:hover {
     transform: scale(1.05);
 }
 
-
+/* Estilo del footer para todas las páginas */
 footer {
     background-color: #000;
     color: #888;
@@ -190,4 +185,86 @@ footer {
 footer p {
     margin: 0;
     font-size: 14px;
+}
+
+/* ----------------------------- */
+/* Estilo específico para Contacto */
+/* ----------------------------- */
+
+section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+section h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #00bcf2;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+/* Estilos del formulario */
+.contact-form {
+    background-color: #1a1a1a;
+    padding: 40px;
+    border-radius: 15px;
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Sombra suave */
+    transition: box-shadow 0.3s;
+}
+
+.contact-form:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.4); /* Efecto hover */
+}
+
+.contact-form label {
+    font-size: 16px;
+    color: #fff;
+    margin-bottom: 8px;
+    display: block;
+    font-weight: 300;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%;
+    padding: 15px;
+    margin-bottom: 20px;
+    background-color: #222;
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    background-color: #333;
+    box-shadow: 0 0 5px #00bcf2;
+}
+
+.contact-form textarea {
+    resize: none; /* Deshabilitar el cambio de tamaño manual */
+}
+
+.contact-form button {
+    background-color: #00bcf2;
+    color: #fff;
+    padding: 15px 40px;
+    border-radius: 8px;
+    border: none;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #007bbf;
+    transform: translateY(-2px); /* Pequeño desplazamiento hacia arriba al hacer hover */
 }
